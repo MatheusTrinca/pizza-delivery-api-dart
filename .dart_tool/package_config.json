@@ -248,6 +248,12 @@
       "languageVersion": "2.7"
     },
     {
+      "name": "json_serializable",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dev/json_serializable-3.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "logging",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dev/logging-0.11.4",
       "packageUri": "lib/",
@@ -518,7 +524,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-09-30T22:35:59.385425Z",
+  "generated": "2020-10-01T16:17:02.918164Z",
   "generator": "pub",
   "generatorVersion": "2.9.0"
 }
