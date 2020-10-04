@@ -9,7 +9,8 @@ class PizzaDeliveryApiChannel extends ApplicationChannel {
   Future prepare() async {
     logger.onRecord.listen(
         (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
-    GetIt.I.registerLazySingleton(() => PizzaDeliveryConfiguration(options.configurationFilePath));
+    GetIt.I.registerLazySingleton(
+        () => PizzaDeliveryConfiguration(options.configurationFilePath));
     configureDependencies();
   }
 
@@ -17,7 +18,7 @@ class PizzaDeliveryApiChannel extends ApplicationChannel {
   Controller get entryPoint {
     final router = Router();
 
-      RoutersConfigure(router).configure();
+    RoutersConfigure(router).configure();
 
     return router;
   }
